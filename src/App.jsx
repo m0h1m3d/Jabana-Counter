@@ -31,7 +31,8 @@ function App() {
         <div className="flex flex-col items-center gap-5 my-15">
         <img src="/bg.png" alt="Jabana Logo" className="size-40" />
         <h1 className="text-5xl font-bold text-[#bc8b62]">Jabana Counter</h1>
-          <p className="text-xl font-bold text-[#bc8b62]">Number of jabanas: <span className="text-2xl font-bold text-[#a2693b]">{localStorage.getItem("count") ? localStorage.getItem("count") : count}</span></p>
+          <p className="flex gap-1 text-xl font-bold text-[#bc8b62]">Number of jabanas:<span className="text-2xl font-bold text-[#a2693b]">{localStorage.getItem("count") ? localStorage.getItem("count") : count}</span>
+          <span><img src="/bg.png" alt="Jabana Logo" className="size-10" /></span></p>
         </div>
         <div className="flex gap-10">
           <button className="w-40 bg-[#bc8b62] text-white font-bold py-3 rounded hover:bg-[#b1885e] cursor-pointer transition-transform duration-300" onClick={(e) => handleAdd(e)}>
