@@ -64,14 +64,13 @@ function App() {
           Clear Count
         </button>
       </div>
-      <div className="w-100 grid grid-cols-2 justify-between">
-        {/* <label for="price">Select Price:</label> */}
+      <div className="w-100 grid grid-cols-2 justify-between px-3">
         <select
           id="price"
           name="price"
           value={price}
           onChange={(e) => setPrice(+e.target.value)}
-          className="w-40 bg-[#bc8b62] text-white font-bold py-1 px-1 rounded hover:bg-[#b1885e] cursor-pointer transition-transform duration-300"
+          className="w-30 bg-[#bc8b62] text-white font-bold py-1 px-1 rounded hover:bg-[#b1885e] cursor-pointer transition-transform duration-300"
         >
           <option value="1500">1,500 SDG</option>
           <option value="2000">2,000 SDG</option>
@@ -79,7 +78,7 @@ function App() {
           <option value="3000">3,000 SDG</option>
           <option value="3500">3,500 SDG</option>
         </select>
-        <h2 className=" font-bold text-[#bc8b62]">
+        <h2 className=" font-bold text-[#bc8b62] text-center">
           سيد الجبنة داير منك: {fortmatter}
         </h2>
       </div>
