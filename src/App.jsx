@@ -64,7 +64,7 @@ function App() {
           Clear Count
         </button>
       </div>
-      <div className="w-100 grid grid-cols-2 justify-between px-3">
+      <div className="w-100 flex justify-between px-3">
         <select
           id="price"
           name="price"
