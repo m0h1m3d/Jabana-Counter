@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import click from './assets/click.wav';
 
 function App() {
   const[count, setCount] = useState(() => {
     const saved = localStorage.getItem("count");
     return +saved ? +saved : 0;
   });
-
+  const audio = new Audio(click);
 
   function handleAdd(e) {
     e.target.style.transform = "scale(0.9)";
@@ -15,6 +16,7 @@ function App() {
     }, 100);
     setCount(prevCount => prevCount + 1);
     localStorage.setItem("count", count + 1);
+    audio.play();
   }
 
   function handleClear(e) {
@@ -24,6 +26,7 @@ function App() {
     }, 100);
     setCount(0);
     localStorage.removeItem("count");
+    audio.play();
   }
 
   return (
